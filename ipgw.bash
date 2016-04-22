@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: yfwz100
+# Author: Zhi
 # https://github.com/yfwz100
 
 USERNAME= # YOUR USERNAME HERE
@@ -20,7 +20,7 @@ case $1 in
     echo $out
   ;;
   "status")
-    out=`curl 'http://ipgw.neu.edu.cn:803/include/auth_action.php' -H 'Origin: http://ipgw.neu.edu.cn:803' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: zh-CN,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: */*' -H 'Referer: http://ipgw.neu.edu.cn:803/srun_portal_pc.php?ac_id=1&' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' -H 'DNT: 1' --data 'action=get_online_info' --compressed --silent`
+    out=`curl 'http://ipgw.neu.edu.cn:803/include/auth_action.php' -H 'Origin: http://ipgw.neu.edu.cn:803' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: zh-CN,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: */*' -H 'Referer: http://ipgw.neu.edu.cn:803/srun_portal_pc.php?ac_id=1' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' -H 'DNT: 1' --data 'action=get_online_info' --compressed --silent`
     if [[ $out == not_online ]]; then
       echo "请先登录"
     else
