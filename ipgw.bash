@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Author: yfwz100
+# https://github.com/yfwz100
+
 USERNAME= # YOUR USERNAME HERE
 PASSWORD= # YOUR PASSWORD HERE
 
